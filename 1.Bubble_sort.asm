@@ -54,7 +54,7 @@ for_i:
         cmp r10, r9
         jne for_j
     inc r8
-    cmp [N], r8
+    cmp [N], r8d
     jne for_i
 xor r9,r9
 NEWLINE
@@ -62,6 +62,6 @@ print:
     PRINT_DEC 4, [vec+4*r9]
     PRINT_STRING ' '
     inc r9,
-    cmp r9, [N]
+    cmp r9d, [N]
     jnz print
 ret
