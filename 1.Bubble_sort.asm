@@ -1,7 +1,7 @@
 %include "io64.inc"
 section .bss
 vec: resd 100
-N:resd 100
+N:resd 1
 
 section .text
 global CMAIN
